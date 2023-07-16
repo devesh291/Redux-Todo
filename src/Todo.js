@@ -18,11 +18,10 @@ const getTodoList = (todos, filter) => {
 const mapStateToProps = (state) => {
   return {
     todos: getTodoList(state.todos, state.todoListFilter),
-    authenticatedUser: state.authenticatedUser,
   };
 };
 
-const TodoList = ({ dispatch, todos, authenticatedUser }) => {
+const TodoList = ({ dispatch, todos }) => {
   const history = useNavigate();
   const addtodo = () => {
     history("/addtodo");
@@ -33,7 +32,6 @@ const TodoList = ({ dispatch, todos, authenticatedUser }) => {
       <button className="btn btn-success" onClick={addtodo}>
         Add todos
       </button>
-      <h1>{authenticatedUser}</h1>
       {todos.map((todo) => (
         <div className={todoStyle.container}>
           <div className="pt-2">
