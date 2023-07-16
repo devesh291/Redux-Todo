@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.container__button {
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 24px;
+}
