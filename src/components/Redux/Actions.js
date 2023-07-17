@@ -22,18 +22,10 @@ export const deleteTodo = id => ({
 export const deleteCompletedTodo = () => ({
     type: 'DELETE_COMPLETED_TODO'
 });
-export const resetTodo = () => ({
-    type: 'RESET_TODO'
-});
 
 export const todoListFilter = filter => ({
     type: 'SET_TODOLIST_FILTER',
     filter
-});
-
-export const toggleTodo = id => ({
-    type: 'TOGGLE_TODO',
-    id
 });
 
 export const setTodoListFilter = filter => ({

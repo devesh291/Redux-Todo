@@ -10,11 +10,7 @@ const EditTodo = ({
   todoDescription,
 }) => {
   const todoListId = todoId;
-
-  // Modal State & Functions
   const [openModalForm, setOpenModalForm] = useState(false);
-
-  // Input value State
   const [title, settitle] = useState(todoTitle);
   const [date, setDate] = useState(todoDate);
   const [description, setDescription] = useState(todoDescription);
